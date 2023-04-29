@@ -1,0 +1,111 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Research Results" name="description" />
+    <title>
+        Neural Parametric Mixtures for Path Guiding
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css" />
+    <link href="utils/report.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="content" id="content">
+        <h1 class="title">
+            Neural Parametric Mixtures for Path Guiding
+        </h1>
+        <p class="authors">
+            Experimental Results
+        </p>
+        <h2>Evaluation</h2>
+        <p>
+        We compare the performance of our method (both the radiance-based version and the product sampling version) with Practical Path Guiding [Müller et al., 2019] and Variance-aware Path Guiding [Rath et al., 2020],
+        as well as unidirectional path tracing (with BSDF importance sampling). For the configuration of the two methods, we use the same setup as [Rath et al., 2020] except for disabling the learnable selection probability, 
+        since our method also do not use this extension. For all the guiding methods, all samples of the pixels are weighed equally. </p>
+        <p>
+        In the experiments, we focus on equal-sample-count comparisons, since we implement all the methods on our GPU renderer, making their runtimes strongly depend on hardware and specific implementation/configurations.
+        All the images are rendered for 750 spp, at the resolution of 1280x720. We show the comparisons on 10 scenes. The method names "Ours (radiance)" and "Ours (full)", denote the NPM-radiance and NPM-product in the main paper.
+        The detailed statistics, including the metrics, absolute timing, are available in Tab. 2 within the main paper.
+        </p>
+        <h2>
+            Test Scenes
+        </h2>
+        <div class="element-container">
+            <div class="report-preview">
+                <a href="scenes\veach-door\index.html">
+                    <img class="report-thumb" src="scenes\veach-door\thumb.png" />
+                </a>
+                <br />
+                Veach Door
+            </div>
+            <div class="report-preview">
+                <a href="scenes\living-room\index.html">
+                    <img class="report-thumb" src="scenes\living-room\thumb.png" />
+                </a>
+                <br />
+                Living Room
+            </div>
+            <div class="report-preview">
+                <a href="scenes\bathroom\index.html">
+                    <img class="report-thumb" src="scenes\bathroom\thumb.png" />
+                </a>
+                <br />
+                Bathroom
+            </div>
+            <div class="report-preview">
+                <a href="scenes\bedroom\index.html">
+                    <img class="report-thumb" src="scenes\bedroom\thumb.png" />
+                </a>
+                <br />
+                Bedroom
+            </div>
+            <div class="report-preview">
+                <a href="scenes\staircase\index.html">
+                    <img class="report-thumb" src="scenes\staircase\thumb.png" />
+                </a>
+                <br />
+                Staircase
+            </div>
+            <div class="report-preview">
+                <a href="scenes\salle-de-bain\index.html">
+                    <img class="report-thumb" src="scenes\salle-de-bain\thumb.png" />
+                </a>
+                <br />
+                Salle de Bain
+            </div>
+            <div class="report-preview">
+                <a href="scenes\breakfast-room\index.html">
+                    <img class="report-thumb" src="scenes\breakfast-room\thumb.png" />
+                </a>
+                <br />
+                Breakfast Room
+            </div>
+            <div class="report-preview">
+                <a href="scenes\white-room\index.html">
+                    <img class="report-thumb" src="scenes\white-room\thumb.png" />
+                </a>
+                <br />
+                White Room
+            </div>
+            <div class="report-preview">
+                <a href="scenes\pink-room\index.html">
+                    <img class="report-thumb" src="scenes\pink-room\thumb.png" />
+                </a>
+                <br />
+                Pink Room
+            </div>
+            <div class="report-preview">
+                <a href="scenes\veach-egg\index.html">
+                    <img class="report-thumb" src="scenes\veach-egg\thumb.png" />
+                </a>
+                <br />
+                Veach Egg
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
