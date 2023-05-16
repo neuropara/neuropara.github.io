@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Project neuropara</title>
+  <title>neuropara</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -50,20 +50,23 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Project neuropara</h1>
+            <h1 class="title is-1 publication-title">neuropara</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a>,</span>
+                Honghao Dong,</span>
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a>,</span> -->
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a>,</span>
+                Guoping Wang,</span>
+                <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a>,</span> -->
               <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                Sheng Li</span>
+                <!-- <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Peking University<br>SIGGRAPH 2023</span>
+              <span class="author-block">Peking University<br>SIGGRAPH 2023 Conference Proceedings</span>
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
@@ -126,10 +129,41 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
+          <!-- <h4 class="title is-3">Notice</h4> -->
           <div class="content has-text-justified">
             <p>
               This project website is under construction. The project will be made public soon. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Previous path guiding techniques typically rely on spatial subdivision
+              structures to approximate directional target distributions,
+              which may cause failure to capture spatio-directional correlations
+              and introduce parallax issue. In this paper, we present Neural Parametric
+              Mixtures (NPM), a neural formulation to encode target distributions
+              for path guiding algorithms.We propose to use a continuous
+              and compact neural implicit representation for encoding parametric
+              models while decoding them via lightweight neural networks. We
+              then derive a gradient-based optimization strategy to directly train
+              the parameters of NPM with noisy Monte Carlo radiance estimates.
+              Our approach efficiently models the target distribution (incident radiance
+              or the product integrand) for path guiding, and outperforms
+              previous guiding methods by capturing the spatio-directional correlations
+              more accurately. Moreover, our approach is more training
+              efficient and is practical for parallelization on modern GPUs.
             </p>
           </div>
         </div>
@@ -143,8 +177,8 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@inproceedings{neuropara,
-        author = {Authors},
         title = {neuropara},
+        author = {Honghao Dong and Guoping Wang and Sheng Li},
         year = {2023},
         doi = {10.1145/3588432.3591533},
         booktitle = {SIGGRAPH '23 Conference Proceedings},
@@ -157,11 +191,11 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="columns is-centered">
+      <div class="columns is-centered has-text-centered">
         <div class="column is-8">
           <div class="content">
             <p>
-              
+              This webpage uses the template from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Nerfies</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>).
             </p>
           </div>
         </div>
