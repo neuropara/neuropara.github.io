@@ -10,22 +10,11 @@
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
   <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/pipeline.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>neuropara</title>
+  <title>Neural Parametric Mixtures for Path Guiding</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -50,7 +39,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">neuropara</h1>
+            <h1 class="title is-2 publication-title">Neural Parametric Mixtures for Path Guiding</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -74,28 +63,38 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                  <a href="static/pdfs/paper.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>Paper</span>
+                    <span>Paper (Author ver.)</span>
                   </a>
                 </span>
 
-                <!-- Supplementary PDF link -->
+                <!-- Results viewer link -->
                 <span class="link-block">
-                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                  <a href="static/results/index.html" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>Supplementary</span>
+                    <span>Result Viewer</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="static/videos/demo.mp4" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Video</span>
                   </a>
                 </span>
 
                 <!-- Github link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -103,7 +102,7 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <!-- <span class="link-block">
@@ -132,7 +131,8 @@
           <!-- <h4 class="title is-3">Notice</h4> -->
           <div class="content has-text-justified">
             <p>
-              This project website is under construction. The project will be made public soon. 
+              This page is under construction. Some of the resources are not available yet.
+              The project will be made public soon. The code is planned to be released before the SIGGRAPH Conference in August. 
             </p>
           </div>
         </div>
@@ -145,8 +145,15 @@
   <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
+
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
+          <img alt="pipeline" src="static/images/pipeline.png">
+          <br>
+          <i> We present a neural representation to encode the target distributions for path guiding algorithms. 
+            Our method could be efficiently trained with gradient-based optimization strategies.</i>
+          <p><br><br></p>
+
+          <h2 class="title is-4">Abstract</h2>
           <div class="content has-text-justified">
             <p>
               Previous path guiding techniques typically rely on spatial subdivision
@@ -166,6 +173,7 @@
               efficient and is practical for parallelization on modern GPUs.
             </p>
           </div>
+
         </div>
       </div>
     </div>
@@ -177,7 +185,7 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@inproceedings{neuropara,
-        title = {neuropara},
+        title = {Neural Parametric Mixtures for Path Guiding},
         author = {Honghao Dong and Guoping Wang and Sheng Li},
         year = {2023},
         doi = {10.1145/3588432.3591533},
@@ -195,7 +203,7 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This webpage uses the template from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Nerfies</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>).
+              This page uses the template from <a href="https://nerfies.github.io/" target="_blank">Nerfies</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>).
             </p>
           </div>
         </div>
