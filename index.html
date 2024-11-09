@@ -72,6 +72,16 @@
                   </a>
                 </span>
 
+                <span class="link-block">
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3588432.3591533" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>ACM DL</span>
+                  </a>
+                </span>
+
                 <!-- Results viewer link -->
                 <span class="link-block">
                   <a href="static/results/index.html" target="_blank"
@@ -83,37 +93,25 @@
                   </a>
                 </span>
 
-                <!-- <span class="link-block">
-                  <a href="static/videos/demo.mp4" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                <span class="link-block">
+                  <a href="https://github.com/neuropara/neural-mixture-guiding"
+                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fas fa-video"></i>
+                        <i class="fab fa-github"></i>
                     </span>
-                    <span>Video</span>
-                  </a>
-                </span> -->
+                    <span>GPU Code</span>
+                    </a>
+                </span>
 
-                <!-- Github link -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                <span class="link-block">
+                  <a href="https://1drv.ms/u/s!Aszox9IN38XVktUG4x-57dZYaRNGEg?e=uASFuC"
+                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                        <i class="fas fa-book"></i>
                     </span>
-                    <span>Code</span>
-                  </a>
-                </span> -->
-
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span> -->
+                    <span>Test Scenes</span>
+                    </a>
+                </span>
 
               </div>
             </div>
@@ -131,8 +129,8 @@
         <div class="column is-four-fifths">
           <img alt="pipeline" src="static/images/pipeline.svg">
           <br>
-          <i> We present a neural representation to encode the target distributions for path guiding algorithms. 
-            Our method could be efficiently trained with gradient-based optimization strategies.</i>
+          <i> We present a lightweight neural representation to encode the spatially-varying distributions, serving a novel alternative for path guiding algorithms. 
+            Our method could be efficiently trained with gradient-based optimization strategies and is practical for parallelization on the GPUs.</i>
           <p><br><br></p>
 
           <h2 class="title is-4">Abstract</h2>
@@ -150,10 +148,13 @@
               the parameters of NPM with noisy Monte Carlo radiance estimates.
               Our approach efficiently models the target distribution (incident radiance
               or the product integrand) for path guiding, and outperforms
-              previous guiding methods by capturing the spatio-directional correlations
-              more accurately. Moreover, our approach is more training
+              classical guiding methods based on explicit trees by capturing the spatio-directional 
+              correlations more accurately. Moreover, our approach is more training
               efficient and is practical for parallelization on modern GPUs.
             </p>
+            <p>We also refer readers to a concurrent work <a href="https://dl.acm.org/doi/10.1145/3649310" style="color: #66ccff;" target="_blank">
+              Online Neural Path Guiding with Normalized Anisotropic Spherical Gaussians</a> which contains a similar 
+              idea and comprehensive experiments.</p>
           </div>
 
         </div>
@@ -161,6 +162,52 @@
     </div>
   </section>
   <!-- End paper abstract -->
+
+  
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+
+        <div class="column is-four-fifths">
+          <h3 class="title is-4">Implementation</h3>
+          <div class="content has-text-justified">
+            <p>
+              We provide the core <a href="https://1drv.ms/u/s!Aj9yU8JMxmm-a05-l5nJoH772V0?e=zPgQpF" target="_blank">code</a> of our prototype for a reference of the actual implementation and parameter/scene setup. 
+              The full codebase might also be released if we could make it stable while resolving the platform-related issues. See README for more details.
+              <br>
+              Update: The GPU prototype implementation (possibly ustable) has been released.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+
+        <div class="column is-four-fifths">
+          
+
+          <h3 class="title is-4">Acknowledgements</h3>
+          <div class="content has-text-justified">
+            <p>
+              This project was supported by the National Key R&D Program of
+              China (No.2022YFB3303400) and NSFC of China (No. 62172013).
+              We also thank the test scenes providers: Mareck (Bathroom), Slyk-
+              Drako (Bedroom), Wig42 (Breakfast Room, Living Room, Pink
+              Room, Staircase), nacimus (Salle de Bain), Jaakko Lehtinen
+              (Veach Door), Jay-Artist (White Room).
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -185,7 +232,6 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This page is under construction. Some of the resources are not available yet. <br>
               This page uses the template from <a href="https://nerfies.github.io/" target="_blank">Nerfies</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>).
             </p>
           </div>
