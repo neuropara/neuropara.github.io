@@ -152,9 +152,6 @@
               correlations more accurately. Moreover, our approach is more training
               efficient and is practical for parallelization on modern GPUs.
             </p>
-            <p>We also refer readers to a concurrent work <a href="https://dl.acm.org/doi/10.1145/3649310" style="color: #66ccff;" target="_blank">
-              Online Neural Path Guiding with Normalized Anisotropic Spherical Gaussians</a> which contains a similar 
-              idea and comprehensive experiments.</p>
           </div>
 
         </div>
@@ -163,29 +160,8 @@
   </section>
   <!-- End paper abstract -->
 
-  
-  <section class="section hero">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-
-        <div class="column is-four-fifths">
-          <h3 class="title is-4">Implementation</h3>
-          <div class="content has-text-justified">
-            <p>
-              We provide the core <a href="https://1drv.ms/u/s!Aj9yU8JMxmm-a05-l5nJoH772V0?e=zPgQpF" target="_blank">code</a> of our prototype for a reference of the actual implementation and parameter/scene setup. 
-              The full codebase might also be released if we could make it stable while resolving the platform-related issues. See README for more details.
-              <br>
-              Update: The GPU prototype implementation (possibly ustable) has been released.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Paper abstract -->
-  <section class="section hero is-light">
+  <section class="section hero">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
 
@@ -201,6 +177,58 @@
               Drako (Bedroom), Wig42 (Breakfast Room, Living Room, Pink
               Room, Staircase), nacimus (Salle de Bain), Jaakko Lehtinen
               (Veach Door), Jay-Artist (White Room).
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+
+        <div class="column is-four-fifths">
+          <h3 class="title is-4">Additional Links</h3>
+          <div class="content has-text-justified">
+            <p>
+             Newer work that we have noticed, which showed advantages / contain comparisons & improvements over this approach, or makes use of this approach in a different way... Thanks to them!
+             <!-- Bullet points -->
+             <ul>
+              <li>
+                <a href="https://dl.acm.org/doi/10.1145/3649310" target="_blank">
+                  <strong>Online Neural Path Guiding with Normalized Anisotropic Spherical Gaussians</strong>
+                </a>
+              </li>
+              <li>
+                <a href="https://diglib.eg.org/handle/10.2312/sr20251181" target="_blank">
+                  <strong>Neural Resampling with Optimized Candidate Allocation</strong>
+                </a>
+              </li>
+              <li>
+                <a href="https://diglib.eg.org/handle/10.2312/sr20251178" target="_blank">
+                  <strong>Neural Path Guiding with Distribution Factorization</strong>
+                </a>
+              </li>
+              <li>
+                <a href="https://illumiart.net/the-guiding-stars/" target="_blank">
+                  <strong>Optimizing Neural Path Guiding with PMMs: A Comprehensive Evaluation and Refinement</strong>
+                </a>
+              </li>
+              <li>
+                <a href="https://arxiv.org/pdf/2410.10149" target="_blank">
+                  <strong>Fast and Accurate Neural Rendering Using Semi-Gradients</strong>
+                </a>
+              </li>
+              <li>
+                <a href="https://illumiart.net/the-guiding-stars/" target="_blank">
+                  <strong>Guiding-Based Importance Sampling for Walk on Stars</strong>
+                </a>
+              </li>
+            </p>
+            <p>
+              We also noted some known issues / limitations of this approach, see the README of the code repository for more details.
             </p>
           </div>
 
